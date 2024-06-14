@@ -1,0 +1,134 @@
+public/css/style.css
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffffde;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    display: flex;
+    margin-left: 32%;
+
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    background-color: #e2e2e2;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .actions {
+    margin-top: 10px;
+  }
+  
+  .actions a,
+  .actions button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .actions button {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  .actions button:hover {
+    background-color: #c0392b;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #2980b9;
+  }
+  
+  .link {
+    margin-top: 20px;
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+
+  .center {
+    margin-left: 40%;
+  }
+  
+  .nouvelle {
+    font-size: 20px;
+    font-style: initial;
+    margin-top: 20px;
+    margin-left: 45%;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(5, 255, 5);
+  }
+  .pos {
+    border: solid 1.3px;
+    border-radius: 8px;
+    /* margin-left: 40px; */
+    margin-bottom: 10px;
+    width: 400px;
+    height: 20px;
+  }
+  .add {
+    margin-left: 30%;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: #333 solid 2px;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    padding: 15px;
+    background-color: #e2e2e2;
+  }

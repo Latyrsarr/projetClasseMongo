@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modifier une Publication</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>Modifier la Publication</h1>
+  <form action="/edit/<%= publication._id %>" method="post">
+    <label for="title">Titre :</label>
+    <input type="text" id="title" name="title" value="<%= publication.title %>" required><br>
+    <label for="authors">Auteurs (séparés par des virgules) :</label>
+    <input type="text" id="authors" name="authors" value="<%= publication.authors.join(', ') %>" required><br>
+    <label for="year">Année :</label>
+    <input type="number" id="year" name="year" value="<%= publication.year %>" required><br>
+    <label for="venue">Lieu :</label>
+    <input type="text" id="venue" name="venue" value="<%= publication.venue %>" required><br>
+    <button type="submit">Modifier</button>
+  </form>
+  <a href="/">Retour à la liste des publications</a>
+</body>
+</html>

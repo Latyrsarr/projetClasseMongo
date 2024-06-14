@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ajouter une Publication</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>Ajouter une Nouvelle Publication</h1>
+  <form action="/add" method="post" class="add">
+    <label for="title">Titre </label> <br>
+    <input type="text" class="pos" id="title" name="title" required><br>
+    <label for="authors">Auteurs (séparés par des virgules) </label><br>
+    <input type="text" class="pos" id="authors" name="authors" required><br>
+    <label for="year">Année </label><br>
+    <input type="number" class="pos" id="year" name="year" required><br>
+    <label for="venue">Lieu </label><br>
+    <input type="text" class="pos" id="venue" name="venue" required><br>
+    <button type="submit">Ajouter</button><br><br>
+    <a href="/">Retour à la liste des publications</a>
+  </form>
+</body>
+</html>

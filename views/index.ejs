@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DBLP Publications</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin-bottom: 10px; }
+    .actions { margin-top: 10px; }
+    .actions form { display: inline; }
+  </style>
+</head>
+<body>
+  <h1>Liste des Publications DBLP</h1>
+  <div class="center"> 
+    <form action="/search" method="get">
+        <input type="text" name="query" placeholder="Rechercher une publication">
+        <button type="submit">Rechercher</button>
+    </form>
+  </div>
+  <div>
+    <button type="button" onclick="window.location.href='/add'" class="nouvelle">Ajouter</button>
+  </div>  
+
+  <ul>
+    <% publications.forEach(publication => { %>
+      <li>
+        <strong><%= publication.title %></strong><br>
+        Auteurs: <%= publication.authors.join(', ') %><br>
+        Année: <%= publication.year %><br>
+        Lieu: <%= publication.venue %>
+        <div class="actions">
+          <a href="/edit/<%= publication._id %>">Modifier</a>
+          <form action="/delete/<%= publication._id %>" method="post">
+            <button type="submit">Supprimer</button>
+          </form>
+        </div>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
